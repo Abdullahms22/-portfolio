@@ -1,0 +1,110 @@
+
+body {
+    font-family: Arial;
+    background-color: #f5f4ff;
+    color: #252344;
+}
+
+/* Navbar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: white;
+}
+
+.logo {
+    color: #635bff;
+}
+
+.links a {
+    text-decoration: none;
+    color: #252344;
+    margin: 10px;
+}
+
+button {
+    background-color: #635bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+
+#about, #skills, #projects, #contact {
+    padding: 60px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 25px;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background-color: white;
+    padding: 25px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: white;
+    padding: 25px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.dark {
+    background-color: #252344;
+    color: white;
+}
+
+.dark .nav,
+.dark .skill,
+.dark .project {
+    background-color: #39365c;
+}
+
+.dark .links a {
+    color: white;
+}
+
+@media (max-width: 600px) {
+
+    .nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #home h1 {
+        font-size: 30px;
+    }
+
+    .skill-list, .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
